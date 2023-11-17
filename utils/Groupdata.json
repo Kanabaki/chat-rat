@@ -1,0 +1,21 @@
+[
+    {
+      "groupId": "GRP001",
+      "name": "Codex Academy",
+      "description": "Innovation Hub",
+      "id": "CODX001"
+    },
+    {
+      "groupId": "GRP002",
+      "name": "Syntax Institute",
+      "description": "Tech Valley",
+      "id": "SYNT002"
+    },
+    {
+      "groupId": "GRP003",
+      "name": "JS Masters",
+      "description": "Web Development Plaza",
+      "id": "JSM003"
+    }
+  ]
+  
