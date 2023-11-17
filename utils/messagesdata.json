@@ -1,0 +1,28 @@
+[
+    {
+      "userId": "USR001",
+      "message": "Hey, just checking in!",
+      "timeSent": "2023-11-16T09:15:00Z"
+    },
+    {
+      "userId": "USR002",
+      "message": "How's everything going?",
+      "timeSent": "2023-11-15T14:30:00Z"
+    },
+    {
+      "userId": "USR003",
+      "message": "Reminder about tomorrow's meeting!",
+      "timeSent": "2023-11-16T10:45:00Z"
+    },
+    {
+      "userId": "USR004",
+      "message": "Hope you're having a great day!",
+      "timeSent": "2023-11-15T16:00:00Z"
+    },
+    {
+      "userId": "USR005",
+      "message": "Check out this interesting article: [link]",
+      "timeSent": "2023-11-16T11:30:00Z"
+    }
+  ]
+  
