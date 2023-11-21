@@ -9,12 +9,6 @@ const userData = require('./userData.json');
 const messageData = require('./messageData.json');
 
 db.once('open', async () => {
-  // clean database
-  await cleanDB("Group", "groups");
-  await cleanDB("User", "users");
-  await cleanDB("Message", "messages");
-
-  // bulk create each model
   const groups = await Group.insertMany(groupData);
   const users = await User.insertMany(userData);
   const messages = await Message.insertMany(messageData);
