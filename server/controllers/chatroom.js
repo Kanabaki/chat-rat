@@ -1,7 +1,7 @@
-import chatRoom from "../models/Groups.js";
+import group from "../models/Groups.js";
 
 export const createChatRoom = async (req, res) => {
-  const newChatRoom = new chatRoom({
+  const newChatRoom = new group({
     members: [req.body.senderId, req.body.receiverId],
   });
 

@@ -4,7 +4,7 @@ import {
   createChatRoom,
   getChatRoomOfUser,
   getChatRoomOfUsers,
-} from "../controllers/chatRoom.js";
+} from "../controllers/chatroom.js";
 
 const router = express.Router();
 
