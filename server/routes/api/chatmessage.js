@@ -1,10 +1,26 @@
-import express from "express";
+const { Schema, model } = require('mongoose');
 
-import { createMessage, getMessages } from "../controllers/chatMessage.js";
+const messageSchema = new Schema({
+  sender: {
+    type: Schema.Types.ObjectId,
+    ref: 'User',
+    required: true
+  },
+  group: {
+    type: Schema.Types.ObjectId,
+    ref: 'Group',
+    required: true
+  },
+  content: {
+    type: String,
+    required: true
+  },
+  timestamp: {
+    type: Date,
+    default: Date.now
+  },
+});
 
-const router = express.Router();
+const Message = model('Message', messageSchema);
 
-router.post("/", createMessage);
-router.get("/:chatRoomId", getMessages);
-
-export default router;
+module.exports = Message;
