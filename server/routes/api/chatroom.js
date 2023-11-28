@@ -1,15 +1,14 @@
-import express from "express";
+const { Schema, model } = require('mongoose');
 
-import {
-  createChatRoom,
-  getChatRoomOfUser,
-  getChatRoomOfUsers,
-} from "../controllers/chatroom.js";
+const groupSchema = new Schema({
+  name: {
+    type: String,
+    required: true,
+    unique: true,
+    trim: true
+  },
+});
 
-const router = express.Router();
+const Group = model('Group', groupSchema);
 
-router.post("/", createChatRoom);
-router.get("/:userId", getChatRoomOfUser);
-router.get("/:firstUserId/:secondUserId", getChatRoomOfUsers);
-
-export default router;
+module.exports = Group;

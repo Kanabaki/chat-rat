@@ -1,10 +1,14 @@
-import express from "express";
+const { Schema, model } = require('mongoose');
 
-import { getAllUsers, getUser } from "../controllers/user.js";
+const userSchema = new Schema({
+  name: {
+    type: String,
+    required: true,
+    unique: true,
+    trim: true
+  },
+});
 
-const router = express.Router();
+const User = model('User', userSchema);
 
-router.get("/", getAllUsers);
-router.get("/:userId", getUser);
-
-export default router;
+module.exports = User;
