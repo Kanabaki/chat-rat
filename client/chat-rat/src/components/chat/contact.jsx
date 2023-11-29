@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
-
-import { getUser } from "../../services/ChatService";
+// import { getUser } from "../../services/ChatService";
 import UserLayout from "../layout/userLayout";
 
 export default function Contact({ chatRoom, onlineUsersId, currentUser }) {

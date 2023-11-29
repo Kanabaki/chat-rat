@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 
-import {
-  getAllUsers,
-  getChatRooms,
-  initiateSocketConnection,
-} from "../../services/ChatService";
+// import {
+//   getAllUsers,
+//   getChatRooms,
+//   initiateSocketConnection,
+// } from "../../services/ChatService";
 import { useAuth } from "../../contexts/AuthContext";
 
 import ChatRoom from "../chat/chatRoom";
@@ -28,24 +28,24 @@ export default function ChatLayout() {
 
   const { currentUser } = useAuth();
 
-  useEffect(() => {
-    const getSocket = async () => {
-      const res = await initiateSocketConnection();
-      socket.current = res;
-      socket.current.emit("addUser", currentUser.uid);
-      socket.current.on("getUsers", (users) => {
-        const userId = users.map((u) => u[0]);
-        setonlineUsersId(userId);
-      });
-    };
+  // useEffect(() => {
+  //   const getSocket = async () => {
+  //     const res = await initiateSocketConnection();
+  //     socket.current = res;
+  //     socket.current.emit("addUser", currentUser.uid);
+  //     socket.current.on("getUsers", (users) => {
+  //       const userId = users.map((u) => u[0]);
+  //       setonlineUsersId(userId);
+  //     });
+  //   };
 
-    getSocket();
-  }, [currentUser.uid]);
+  //   getSocket();
+  // }, [currentUser.uid]);
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await getChatRooms(currentUser.uid);
-      setChatRooms(res);
+      //const res = await getChatRooms(currentUser.uid);
+      //setChatRooms(res);
     };
 
     fetchData();
