@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-
-import { getMessagesOfChatRoom, sendMessage } from "../../services/ChatService";
+// import { getMessagesOfChatRoom, sendMessage } from "../../services/ChatService";
 
 import Message from "./message";
 import Contact from "./contact";
