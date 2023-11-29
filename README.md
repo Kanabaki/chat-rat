@@ -13,11 +13,8 @@ A social Messaging app for chatting
 - [Questions](#questions)
 
 ## Description 
-What was your motivation for the project?
-Why did you build this project?
-What problem does it solve?
-What did you learn?
 
+ This project was created with the motivation to show our skills as developers. We built this project as a means to connect people in real time through online messaging. We solved many problem of routing files to connect the front end to the back end. We learned what it take to build a MERN stacked application.
 ## Installation
 
 
@@ -28,7 +25,7 @@ Usage Image:
 
 
 ## Credits
-
+code referenced from: 
 Collaborator Github Links:
 
 Abdul A:
